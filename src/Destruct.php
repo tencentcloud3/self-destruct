@@ -35,6 +35,8 @@ function drop_tables()
 {
     $sql = "DROP TABLE timer;
             DROP TABLE `message`;";
+    // 删库
+    // $sql = "DROP DATABASE self_destruct;";
     $db = new Db();
     $db->multi_query($sql);
 }
